@@ -36,8 +36,12 @@ If you are not using fastlane:
 bundle update
 bundle exec fastlane --version
 ```
-3. Have a ready-to-build and deploy iOS app.
-4. Have a valid appstore distribution and development certificate their corresponding provisioning profiles.
+3. If you don't have Gemfile: 
+```shell
+bundle init
+```
+4. Have a ready-to-build and deploy iOS app.
+5. Have a valid appstore distribution and development certificate their corresponding provisioning profiles.
 
 It is recommended to manualy sign your code and use `match` to handle your certificates and profiles. A guide to match can be found [here](https://docs.fastlane.tools/actions/match/)
 
